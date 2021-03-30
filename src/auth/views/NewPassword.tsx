@@ -9,13 +9,12 @@ import NewPasswordPage, {
 } from "../components/NewPasswordPage";
 import { SetPasswordMutation } from "../mutations";
 import { SetPassword } from "../types/SetPassword";
-import { NewPasswordUrlQueryParams } from "../urls";
 
 const NewPassword: React.FC<RouteComponentProps> = ({ location }) => {
   const navigate = useNavigator();
   const { loginByToken } = useUser();
 
-  const params: NewPasswordUrlQueryParams = parseQs(location.search.substr(1));
+  const params: any = parseQs(location.search.substr(1));
 
   const handleSetPassword = async (data: SetPassword) => {
     if (data.setPassword.errors.length === 0) {

@@ -32,7 +32,7 @@ import VoucherDetailsViewComponent from "./views/VoucherDetails";
 import VoucherListViewComponent from "./views/VoucherList";
 
 const SaleListView: React.FC<RouteComponentProps<{}>> = ({ location }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: SaleListUrlQueryParams = asSortParams(qs, SaleListUrlSortField);
   return <SaleListViewComponent params={params} />;
 };
@@ -63,7 +63,7 @@ const SaleCreateView: React.FC<RouteComponentProps> = ({ location }) => {
 };
 
 const VoucherListView: React.FC<RouteComponentProps<{}>> = ({ location }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: VoucherListUrlQueryParams = asSortParams(
     qs,
     VoucherListUrlSortField,

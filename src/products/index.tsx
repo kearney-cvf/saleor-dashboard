@@ -32,7 +32,7 @@ import ProductVariantCreateComponent from "./views/ProductVariantCreate";
 import ProductVariantCreatorComponent from "./views/ProductVariantCreator";
 
 const ProductList: React.FC<RouteComponentProps<any>> = ({ location }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: ProductListUrlQueryParams = asSortParams(
     {
       ...qs,
@@ -48,7 +48,7 @@ const ProductList: React.FC<RouteComponentProps<any>> = ({ location }) => {
 };
 
 const ProductUpdate: React.FC<RouteComponentProps<any>> = ({ match }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: ProductUrlQueryParams = qs;
 
   return (

@@ -43,7 +43,7 @@ export enum VoucherDetailsPageTab {
   products = "products"
 }
 
-export function voucherDetailsPageTab(tab: string): VoucherDetailsPageTab {
+export function voucherDetailsPageTab(tab: any): VoucherDetailsPageTab {
   return tab === VoucherDetailsPageTab.products
     ? VoucherDetailsPageTab.products
     : tab === VoucherDetailsPageTab.collections

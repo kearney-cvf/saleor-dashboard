@@ -45,7 +45,7 @@ export enum SaleDetailsPageTab {
   collections = "collections",
   products = "products"
 }
-export function saleDetailsPageTab(tab: string): SaleDetailsPageTab {
+export function saleDetailsPageTab(tab: any): SaleDetailsPageTab {
   return tab === SaleDetailsPageTab.products
     ? SaleDetailsPageTab.products
     : tab === SaleDetailsPageTab.collections
