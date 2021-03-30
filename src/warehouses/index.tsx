@@ -19,7 +19,7 @@ import WarehouseDetailsComponent from "./views/WarehouseDetails";
 import WarehouseListComponent from "./views/WarehouseList";
 
 const WarehouseList: React.FC<RouteComponentProps> = ({ location }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: WarehouseListUrlQueryParams = asSortParams(
     qs,
     WarehouseListUrlSortField

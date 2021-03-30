@@ -63,7 +63,7 @@ const TranslationsCategories: React.FC<TranslationsEntityRouteProps> = ({
   location,
   match
 }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: TranslationsCategoriesQueryParams = {
     activeField: qs.activeField
   };
@@ -79,7 +79,7 @@ const TranslationsCollections: React.FC<TranslationsEntityRouteProps> = ({
   location,
   match
 }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: TranslationsCollectionsQueryParams = {
     activeField: qs.activeField
   };
@@ -95,7 +95,7 @@ const TranslationsProducts: React.FC<TranslationsEntityRouteProps> = ({
   location,
   match
 }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: TranslationsProductsQueryParams = {
     activeField: qs.activeField
   };
@@ -111,7 +111,7 @@ const TranslationsSales: React.FC<TranslationsEntityRouteProps> = ({
   location,
   match
 }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: TranslationsSalesQueryParams = {
     activeField: qs.activeField
   };
@@ -127,7 +127,7 @@ const TranslationsVouchers: React.FC<TranslationsEntityRouteProps> = ({
   location,
   match
 }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: TranslationsVouchersQueryParams = {
     activeField: qs.activeField
   };
@@ -143,7 +143,7 @@ const TranslationsPages: React.FC<TranslationsEntityRouteProps> = ({
   location,
   match
 }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: TranslationsPagesQueryParams = {
     activeField: qs.activeField
   };
@@ -159,7 +159,7 @@ const TranslationsProductTypes: React.FC<TranslationsEntityRouteProps> = ({
   location,
   match
 }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: TranslationsProductTypesQueryParams = {
     activeField: qs.activeField
   };
@@ -175,7 +175,7 @@ const TranslationsShippingMethod: React.FC<TranslationsEntityRouteProps> = ({
   location,
   match
 }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: TranslationsShippingMethodQueryParams = {
     activeField: qs.activeField
   };

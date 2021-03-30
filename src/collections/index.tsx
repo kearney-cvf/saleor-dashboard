@@ -20,7 +20,7 @@ import CollectionDetailsView from "./views/CollectionDetails";
 import CollectionListView from "./views/CollectionList";
 
 const CollectionList: React.FC<RouteComponentProps<{}>> = ({ location }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: CollectionListUrlQueryParams = asSortParams(
     qs,
     CollectionListUrlSortField

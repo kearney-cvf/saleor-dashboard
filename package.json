@@ -1,10 +1,10 @@
 {
   "name": "saleor-dashboard",
-  "version": "3.0.0-a.5",
+  "version": "3.0.0-a.14",
   "main": "src/index.tsx",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mirumee/saleor-dashboard.git"
+    "url": "git://github.com/kearney-cvf/saleor-dashboard.git"
   },
   "author": "Mirumee Software",
   "license": "BSD-3-Clause",

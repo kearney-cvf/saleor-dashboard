@@ -29,7 +29,7 @@ import OrderReturnComponent from "./views/OrderReturn";
 import OrderSettings from "./views/OrderSettings";
 
 const OrderList: React.FC<RouteComponentProps<any>> = ({ location }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: OrderListUrlQueryParams = asSortParams(
     qs,
     OrderListUrlSortField,
@@ -39,7 +39,7 @@ const OrderList: React.FC<RouteComponentProps<any>> = ({ location }) => {
   return <OrderListComponent params={params} />;
 };
 const OrderDraftList: React.FC<RouteComponentProps<any>> = ({ location }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: OrderDraftListUrlQueryParams = asSortParams(
     qs,
     OrderDraftListUrlSortField,

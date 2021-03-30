@@ -22,7 +22,7 @@ import ResetPassword from "./views/ResetPassword";
 import ResetPasswordSuccess from "./views/ResetPasswordSuccess";
 
 const LoginView: React.FC<RouteComponentProps<any>> = () => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: LoginUrlQueryParams = qs;
 
   return <LoginViewComponent params={params} />;

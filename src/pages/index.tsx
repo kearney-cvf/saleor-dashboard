@@ -19,7 +19,7 @@ import PageDetailsComponent from "./views/PageDetails";
 import PageListComponent from "./views/PageList";
 
 const PageList: React.FC<RouteComponentProps<any>> = ({ location }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: PageListUrlQueryParams = asSortParams(
     qs,
     PageListUrlSortField,

@@ -17,7 +17,7 @@ import PluginsListComponent from "./views/PluginList";
 import PluginsDetailsComponent from "./views/PluginsDetails";
 
 const PluginList: React.FC<RouteComponentProps<any>> = ({ location }) => {
-  const qs = parseQs(location.search.substr(1));
+  const qs: any = parseQs(location.search.substr(1));
   const params: PluginListUrlQueryParams = asSortParams(
     qs,
     PluginListUrlSortField
