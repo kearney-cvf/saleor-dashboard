@@ -3,6 +3,7 @@ import CardContent from "@material-ui/core/CardContent";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
+import CardSpacer from "@saleor/components/CardSpacer";
 import CardTitle from "@saleor/components/CardTitle";
 import Grid from "@saleor/components/Grid";
 import Hr from "@saleor/components/Hr";
@@ -101,6 +102,42 @@ const CustomerInfo: React.FC<CustomerInfoProps> = props => {
           type="email"
           label={intl.formatMessage(commonMessages.email)}
           value={data.email}
+          onChange={onChange}
+        />
+        <CardSpacer />
+        <TextField
+          disabled={disabled}
+          error={!!formErrors.email}
+          fullWidth
+          helperText={getAccountErrorMessage(formErrors.email, intl)}
+          name="company"
+          type="text"
+          label={"회사명"}
+          // value={data.email}
+          onChange={onChange}
+        />
+        <CardSpacer />
+        <TextField
+          disabled={disabled}
+          error={!!formErrors.email}
+          fullWidth
+          helperText={getAccountErrorMessage(formErrors.email, intl)}
+          name="tel"
+          type="text"
+          label="전화번호"
+          // value={data.email}
+          onChange={onChange}
+        />
+        <CardSpacer />
+        <TextField
+          disabled={disabled}
+          error={!!formErrors.email}
+          fullWidth
+          helperText={getAccountErrorMessage(formErrors.email, intl)}
+          name="tel"
+          type="text"
+          label="휴대폰"
+          // value={data.email}
           onChange={onChange}
         />
       </CardContent>

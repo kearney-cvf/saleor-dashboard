@@ -8,6 +8,7 @@ import Metadata from "@saleor/components/Metadata/Metadata";
 import { MetadataFormData } from "@saleor/components/Metadata/types";
 import PageHeader from "@saleor/components/PageHeader";
 import SaveButtonBar from "@saleor/components/SaveButtonBar";
+import CustomerShippingAddresses from "@saleor/customers/components/CustomerShippingAddresses";
 import { AccountErrorFragment } from "@saleor/fragments/types/AccountErrorFragment";
 import { SubmitPromise } from "@saleor/hooks/useForm";
 import { sectionNames } from "@saleor/intl";
@@ -113,6 +114,12 @@ const CustomerDetailsPage: React.FC<CustomerDetailsPageProps> = ({
               </div>
               <div>
                 <CustomerAddresses
+                  customer={customer}
+                  disabled={disabled}
+                  onAddressManageClick={onAddressManageClick}
+                />
+                <CardSpacer />
+                <CustomerShippingAddresses
                   customer={customer}
                   disabled={disabled}
                   onAddressManageClick={onAddressManageClick}

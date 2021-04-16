@@ -102,6 +102,14 @@ export const SaveButtonBar: React.FC<SaveButtonBarProps> = props => {
             elevation={!(appAction.docked || scrolledToBottom) ? 16 : 0}
           >
             <CardContent className={classes.content}>
+              <Button
+                className={classes.button}
+                variant="text"
+                onClick={onCancel}
+                data-test="button-bar-cancel"
+              >
+                수락
+              </Button>
               {!!onDelete && (
                 <Button
                   variant="contained"
